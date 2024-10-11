@@ -43,7 +43,7 @@ namespace MergeSortEjemplo
         {
             if (inicio < fin) //Se verifica que hay más de un elemento en el arreglo
             {
-                int medio = (inicio + fin) / 2; //Calcula el punto medio del arreglo
+                int medio = (inicio + fin) / 2; //Calcula el punto medio del arreglo final
 
                 MergeSort(empleados, inicio, medio);
                 MergeSort(empleados, medio + 1, fin);
