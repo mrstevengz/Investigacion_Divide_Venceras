@@ -42,7 +42,7 @@ namespace MergeSortEjemplo
             Array.Copy(arreglo, inicio, izquierda, 0, n1);
             Array.Copy(arreglo, medio + 1, derecha, 0, n2);
 
-            int i = 0, j = 0, k = inicio;
+            int i = 0, j = 0, k = inicio; //Algoritmo de combinacion
 
             while (i < n1 && j < n2)
             {
@@ -74,5 +74,13 @@ namespace MergeSortEjemplo
             }
         }
 
+        static void ImprimirArreglo(int[] arreglo)
+        {
+            foreach (int elemento in arreglo)
+            {
+                Console.Write(elemento + " ");
+            }
+            Console.WriteLine();
+        }
     }
 }
