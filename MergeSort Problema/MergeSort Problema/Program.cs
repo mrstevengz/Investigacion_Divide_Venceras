@@ -8,52 +8,73 @@ namespace MergeSortEjemplo
 {
     class Program
     {
+        class Empleado
+        {
+            public string Nombre { get; set; }
+            public decimal Salario { get; set; }
+
+            public Empleado(string nombre, decimal salario)
+            {
+                Nombre = nombre;
+                Salario = salario;
+            }
+        }
+
         static void Main()
         {
-            int[] arreglo = { 38, 27, 43, 3, 9, 82, 10 };
-            Console.WriteLine("Arreglo original:");
-            ImprimirArreglo(arreglo);
+            Empleado[] empleados = {
+                    new Empleado("Juan", 3000),
+                    new Empleado("Ana", 2500),
+                    new Empleado("Luis", 4000),
+                    new Empleado("Maria", 3500),
+                    new Empleado("Pedro", 2000)
+                };
 
-            MergeSort(arreglo, 0, arreglo.Length - 1);
+            Console.WriteLine("Lista de empleados original:");
+            ImprimirEmpleados(empleados);
 
-            Console.WriteLine("\nArreglo ordenado:");
-            ImprimirArreglo(arreglo);
+            MergeSort(empleados, 0, empleados.Length - 1);
+
+            Console.WriteLine("\nLista de empleados ordenada por salario:");
+            ImprimirEmpleados(empleados);
         }
-        static void MergeSort(int[] arreglo, int inicio, int fin)
+
+        static void MergeSort(Empleado[] empleados, int inicio, int fin)
         {
-            if (inicio < fin) //Se verifica que hay mas de un elemento
+            if (inicio < fin) //Se verifica que hay más de un elemento
             {
                 int medio = (inicio + fin) / 2; //Calcula el punto medio del arreglo
 
-                MergeSort(arreglo, inicio, medio);
-                MergeSort(arreglo, medio + 1, fin);
+                MergeSort(empleados, inicio, medio);
+                MergeSort(empleados, medio + 1, fin);
 
-                Combinar(arreglo, inicio, medio, fin);
+                Combinar(empleados, inicio, medio, fin);
             }
         }
-        static void Combinar(int[] arreglo, int inicio, int medio, int fin)
+
+        static void Combinar(Empleado[] empleados, int inicio, int medio, int fin)
         {
             int n1 = medio - inicio + 1; //Calcula el tamaño de los subarreglos izquierdo y derecho
             int n2 = fin - medio;
 
-            int[] izquierda = new int[n1];
-            int[] derecha = new int[n2];
+            Empleado[] izquierda = new Empleado[n1];
+            Empleado[] derecha = new Empleado[n2];
 
-            Array.Copy(arreglo, inicio, izquierda, 0, n1);
-            Array.Copy(arreglo, medio + 1, derecha, 0, n2);
+            Array.Copy(empleados, inicio, izquierda, 0, n1);
+            Array.Copy(empleados, medio + 1, derecha, 0, n2);
 
-            int i = 0, j = 0, k = inicio; //Algoritmo de combinacion
+            int i = 0, j = 0, k = inicio; //Algoritmo de combinación
 
             while (i < n1 && j < n2)
             {
-                if (izquierda[i] <= derecha[j])
+                if (izquierda[i].Salario <= derecha[j].Salario)
                 {
-                    arreglo[k] = izquierda[i];
+                    empleados[k] = izquierda[i];
                     i++;
                 }
                 else
                 {
-                    arreglo[k] = derecha[j];
+                    empleados[k] = derecha[j];
                     j++;
                 }
                 k++;
@@ -61,26 +82,25 @@ namespace MergeSortEjemplo
 
             while (i < n1)
             {
-                arreglo[k] = izquierda[i];
+                empleados[k] = izquierda[i];
                 i++;
                 k++;
             }
 
             while (j < n2)
             {
-                arreglo[k] = derecha[j];
+                empleados[k] = derecha[j];
                 j++;
                 k++;
             }
         }
 
-        static void ImprimirArreglo(int[] arreglo)
+        static void ImprimirEmpleados(Empleado[] empleados)
         {
-            foreach (int elemento in arreglo)
+            foreach (Empleado empleado in empleados)
             {
-                Console.Write(elemento + " ");
+                Console.WriteLine($"Nombre: {empleado.Nombre}, Salario: {empleado.Salario}");
             }
-            Console.WriteLine();
         }
     }
 }
