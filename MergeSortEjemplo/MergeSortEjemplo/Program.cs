@@ -33,5 +33,34 @@ namespace MergeSortEjemplo
             }
         }
 
-        
-}
+        static void Combinar(int[] arreglo, int inicio, int medio, int fin)
+        {
+            int n1 = medio - inicio + 1; //Calcula el tamaño de los subarreglos izquierdo y derecho
+            int n2 = fin - medio;
+
+            int[] izquierda = new int[n1];
+            int[] derecha = new int[n2];
+
+            Array.Copy(arreglo, inicio, izquierda, 0, n1);
+            Array.Copy(arreglo, medio + 1, derecha, 0, n2);
+
+            int i = 0, j = 0, k = inicio;
+
+            while (i < n1 && j < n2)
+            {
+                if (izquierda[i] <= derecha[j])
+                {
+                    arreglo[k] = izquierda[i];
+                    i++;
+                }
+                else
+                {
+                    arreglo[k] = derecha[j];
+                    j++;
+                }
+                k++;
+            }
+
+
+
+        }
