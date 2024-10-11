@@ -32,7 +32,6 @@ namespace MergeSortEjemplo
                 Combinar(arreglo, inicio, medio, fin);
             }
         }
-
         static void Combinar(int[] arreglo, int inicio, int medio, int fin)
         {
             int n1 = medio - inicio + 1; //Calcula el tamaño de los subarreglos izquierdo y derecho
@@ -61,6 +60,28 @@ namespace MergeSortEjemplo
                 k++;
             }
 
+            while (i < n1)
+            {
+                arreglo[k] = izquierda[i];
+                i++;
+                k++;
+            }
 
-
+            while (j < n2)
+            {
+                arreglo[k] = derecha[j];
+                j++;
+                k++;
+            }
         }
+
+        static void ImprimirArreglo(int[] arreglo)
+        {
+            foreach (int elemento in arreglo)
+            {
+                Console.Write(elemento + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+}

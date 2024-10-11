@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9B9A515E-AF2B-4645-9EC4-234E5069E75C}</ProjectGuid>
+    <ProjectGuid>{B6956D0B-7F5B-4DA9-84FA-24B69FE3FBC6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MergeSortEjemplo</RootNamespace>
-    <AssemblyName>MergeSortEjemplo</AssemblyName>
+    <RootNamespace>MergeSort_Problema</RootNamespace>
+    <AssemblyName>MergeSort Problema</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

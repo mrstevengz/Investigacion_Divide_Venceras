@@ -1,0 +1,14 @@
+C:\Users\seque\source\repos\MergeSort Problema\MergeSort Problema\bin\Debug\MergeSort Problema.exe.config
+C:\Users\seque\source\repos\MergeSort Problema\MergeSort Problema\bin\Debug\MergeSort Problema.exe
+C:\Users\seque\source\repos\MergeSort Problema\MergeSort Problema\bin\Debug\MergeSort Problema.pdb
+C:\Users\seque\source\repos\MergeSort Problema\MergeSort Problema\obj\Debug\MergeSort Problema.csproj.AssemblyReference.cache
+C:\Users\seque\source\repos\MergeSort Problema\MergeSort Problema\obj\Debug\MergeSort Problema.csproj.CoreCompileInputs.cache
+C:\Users\seque\source\repos\MergeSort Problema\MergeSort Problema\obj\Debug\MergeSort Problema.exe
+C:\Users\seque\source\repos\MergeSort Problema\MergeSort Problema\obj\Debug\MergeSort Problema.pdb
+C:\Users\seque\OneDrive\Desktop\Divide y Venceras\MergeSort Problema\MergeSort Problema\bin\Debug\MergeSort Problema.exe.config
+C:\Users\seque\OneDrive\Desktop\Divide y Venceras\MergeSort Problema\MergeSort Problema\bin\Debug\MergeSort Problema.exe
+C:\Users\seque\OneDrive\Desktop\Divide y Venceras\MergeSort Problema\MergeSort Problema\bin\Debug\MergeSort Problema.pdb
+C:\Users\seque\OneDrive\Desktop\Divide y Venceras\MergeSort Problema\MergeSort Problema\obj\Debug\MergeSort Problema.csproj.AssemblyReference.cache
+C:\Users\seque\OneDrive\Desktop\Divide y Venceras\MergeSort Problema\MergeSort Problema\obj\Debug\MergeSort Problema.csproj.CoreCompileInputs.cache
+C:\Users\seque\OneDrive\Desktop\Divide y Venceras\MergeSort Problema\MergeSort Problema\obj\Debug\MergeSort Problema.exe
+C:\Users\seque\OneDrive\Desktop\Divide y Venceras\MergeSort Problema\MergeSort Problema\obj\Debug\MergeSort Problema.pdb
