@@ -41,7 +41,7 @@ namespace MergeSortEjemplo
 
         static void MergeSort(Empleado[] empleados, int inicio, int fin)
         {
-            if (inicio < fin) //Se verifica que hay más de un elemento
+            if (inicio < fin) //Se verifica que hay más de un elemento en el arreglo
             {
                 int medio = (inicio + fin) / 2; //Calcula el punto medio del arreglo
 
